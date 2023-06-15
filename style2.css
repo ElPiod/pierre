@@ -1,0 +1,91 @@
+h1::first-letter{
+    color: red;
+}
+h1, h2, h3, h4{
+    animation: title 1s ease-in-out;
+}
+h2::first-letter{
+    color: skyblue;
+}
+h3::first-letter{
+    color: yellowgreen;
+}
+h4::first-letter{
+    color: rgba(75, 74, 74, 0.63);
+} 
+.content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.item_un p{
+    animation: fromLeft 3s ease-in;
+}
+.item_deux p{
+    animation: fromRight 3s ease-in;
+}
+.item_trois p{
+    animation: fromTop 3s ease-in;
+}
+.item_quatre p{
+    animation: fromBottom 3s ease-in;
+}
+@keyframes fromLeft{
+    0%{
+        transform: translateX(-100%)
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes fromRight{
+    0%{
+        transform: translateX(100%)
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes fromTop{
+    0%{
+        transform: translateX(-100%)
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes fromBottom{
+    0%{
+        transform: translateX(100%)
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes title{
+    0%{
+        transform: translateX(-100%)
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+/* deuxieme partie */
+.content_deux{
+    animation-duration: 2s;
+    animation-name: deux;
+}
+@keyframes deux{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+    75%{
+        font-size: 20px;
+        margin-left: 25%;
+        width: 100%;
+    }
+}

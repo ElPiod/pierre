@@ -1,0 +1,25 @@
+div{
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation-name: piod;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes piod{
+    0%{
+        background: yellow;
+    }
+    25%{
+        background-image: blue;
+    }
+    50%{
+        background: green;
+    }
+    75%{
+        background: orange;
+    }
+    100%{
+        background: red;
+    }
+}
